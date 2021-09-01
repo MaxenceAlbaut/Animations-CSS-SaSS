@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../../public/fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'shrikhandregular';
+    src: url('../../public/fonts/Shrikhand-Regular/Shrikhand-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'robotoregular', Arial, Verdana, Helvetica, sans-serif;
+    color: black;
+}
+
+.title {
+    font-family: 'shrikhandregular', Arial, Verdana, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
