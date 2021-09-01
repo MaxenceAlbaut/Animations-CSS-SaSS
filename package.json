@@ -1,0 +1,19 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "description": "ohmyfood website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxenceAlbaut/MaxenceAlbaut_3_01092021.git"
+  },
+  "author": "Maxence Albaut",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxenceAlbaut/MaxenceAlbaut_3_01092021/issues"
+  },
+  "homepage": "https://github.com/MaxenceAlbaut/MaxenceAlbaut_3_01092021#readme"
+}
