@@ -1,0 +1,19 @@
+.location_container {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background-color: $grey;
+    box-shadow: inset 0 8px 6px -6px rgb(163, 163, 163);
+    .location_icon {
+        width: 10%;
+        display: flex;
+        i {
+            color: $darkgrey;
+            margin: auto;
+        }
+    }
+    .location_text {
+        padding-right: 10%;
+    }
+}
