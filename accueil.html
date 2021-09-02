@@ -29,99 +29,100 @@
         </section>
 
 
-        <section>
+        <section id="fonctionnement">
             <div><h2>Fonctionnement</h2></div>
-            <div>
-                <div>
-                    <div>1</div>
-                    <div><i class="fas fa-mobile-alt"></i></div>
-                    <div><p>Choisissez un restaurant</p></div>
+            <div class="directive_list_container">
+                <div class="directive_container">
+                    <div class="directive_number">1</div>
+                    <div class="icon_container"><i class="fas fa-mobile-alt directive_icon"></i></div>
+                    <p>Choisissez un restaurant</p>
                 </div>
-                <div>
-                    <div>2</div>
-                    <div>
-                        <div><i class="fas fa-ellipsis-v"></i></div>
-                        <div><i class="fas fa-bars"></i></div>
+                <div class="directive_container">
+                    <div class="directive_number">2</div>
+                    <div class="icon_container double_icon_container">
+                        <div><i class="fas fa-ellipsis-v directive_icon"></i></div>
+                        <div><i class="fas fa-bars directive_icon"></i></div>
                     </div>
                     <div><p>Composez votre menu</p></div>
                 </div>
-                <div>
-                    <div>3</div>
-                    <div><i class="fas fa-store"></i></div>
+                <div class="directive_container">
+                    <div class="directive_number">3</div>
+                    <div class="icon_container"><i class="fas fa-store directive_icon"></i></div>
                     <div><p>Dégustez au restaurant</p></div>
                 </div>
             </div>
         </section>
 
 
-        <section>
-            <div><h2>Restaurants</h2></div>
-            <div>
-                <div> <!--Restaurant Card-->
-                    <div> <!--Restaurant Preview-->
-                        <div>Nouveau</div>
+        <section id="restaurants">
+            <div class="res_card_container">
+                <h2>Restaurants</h2>
+                <a href="menu_lpg.html" class="res_card"> <!--Restaurant Card-->
+                    <div  class="res_card_preview res_img_lpg"> <!--Restaurant Preview-->
+                        <div class="res_card_new">Nouveau</div>
                     </div>
-                    <div> <!--Restaurant Info-->
-                        <div>
-                            <div><p>La palette du goût</p></div>
-                            <div><p>Ménilmontant</p></div>
+                    <div class="res_card_info"> <!--Restaurant Info-->
+                        <div class="res_card_info_text">
+                            <span class="res_card_info_text_name">La palette du goût</span>
+                            <span class="res_card_info_text_loc">Ménilmontant</span>
                         </div>
-                        <div><i class="far fa-heart"></i></div>
-                    </div>
-                </div>
-                <div> <!--Restaurant Card-->
-                    <div> <!--Restaurant Preview-->
-                        <div>Nouveau</div>
-                    </div>
-                    <div> <!--Restaurant Info-->
-                        <div>
-                            <div><p>La note enchantée</p></div>
-                            <div><p>Charonne</p></div>
+                        <div class="res_card_info_heart"><i class="far fa-heart"></i>
                         </div>
-                        <div><i class="far fa-heart"></i></div>
                     </div>
-                </div>
-                <div> <!--Restaurant Card-->
-                    <div> <!--Restaurant Preview--></div>
-                    <div> <!--Restaurant Info-->
-                        <div>
-                            <div><p>À la française</p></div>
-                            <div><p>Cité Rouge</p></div>
+                </a>
+                <a href="menu_lne.html" class="res_card"> <!--Restaurant Card-->
+                    <div class="res_card_preview res_img_lne"> <!--Restaurant Preview-->
+                        <div class="res_card_new">Nouveau</div>
+                    </div>
+                    <div class="res_card_info"> <!--Restaurant Info-->
+                        <div class="res_card_info_text">
+                            <span class="res_card_info_text_name">La note enchantée</span>
+                            <span class="res_card_info_text_loc">Charonne</span>
                         </div>
-                        <div><i class="far fa-heart"></i></div>
+                        <div class="res_card_info_heart"><i class="far fa-heart"></i></div>
                     </div>
-                </div>
-                <div> <!--Restaurant Card-->
-                    <div> <!--Restaurant Preview--></div>
-                    <div> <!--Restaurant Info-->
-                        <div>
-                            <div><p>Le délice des sens</p></div>
-                            <div><p>Folie-Méricourt</p></div>
+                </a>
+                <a href="menu_alf.html" class="res_card"> <!--Restaurant Card-->
+                    <div class="res_card_preview res_img_alf"> <!--Restaurant Preview--></div>
+                    <div class="res_card_info"> <!--Restaurant Info-->
+                        <div class="res_card_info_text">
+                            <span class="res_card_info_text_name">À la française</span>
+                            <span class="res_card_info_text_loc">Cité Rouge</span>
                         </div>
-                        <div><i class="far fa-heart"></i></div>
+                        <div class="res_card_info_heart"><i class="far fa-heart"></i></div>
                     </div>
-                </div>
+                </a>
+                <a href="menu_lds.html" class="res_card"> <!--Restaurant Card-->
+                    <div class="res_card_preview res_img_lds"> <!--Restaurant Preview--></div>
+                    <div class="res_card_info"> <!--Restaurant Info-->
+                        <div class="res_card_info_text">
+                            <span class="res_card_info_text_name">Le délice des sens</span>
+                            <span class="res_card_info_text_loc">Folie-Méricourt</span>
+                        </div>
+                        <div class="res_card_info_heart"><i class="far fa-heart"></i></div>
+                    </div>
+                </a>
             </div>
         </section>
 
 
         <footer>
             <div class="title title__footer">ohmyfood</div>
-            <div>
-                <div>
+            <div class="footer_link_list">
+                <div class="footer_link">
                     <a href="">
-                        <span><i class="fas fa-utensils"></i></span>
+                        <span class="footer_link_logo"><i class="fas fa-utensils"></i></span>
                         <span>Proposer un restaurant</span>
                     </a>
                 </div>
-                <div>
+                <div class="footer_link">
                     <a href="">
-                        <span><i class="fas fa-hands-helping"></i></span>
+                        <span class="footer_link_logo footer_link_logo--small"><i class="fas fa-hands-helping"></i></span>
                         <span>Devenir partenaire</span>
                     </a>
                 </div>
-                <div><a href="">Mentions légales</a></div>
-                <div><a href="">Contact</a></div>
+                <div class="footer_link"><a href="">Mentions légales</a></div>
+                <div class="footer_link"><a href="">Contact</a></div>
             </div>
         </footer>
 
