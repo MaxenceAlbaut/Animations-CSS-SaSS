@@ -16,27 +16,28 @@
             <div class="title title__header">ohmyfood</div>
         </header>
 
+        <div class="menu_preview res_img_alf"></div> <!--MENU PREVIEW-->
 
-        <div><!--MENU PREVIEW--></div>
-
-
-        <section>
-            <div>
-                <div><h1>À la française</h1></div>
+        <section id="menu_display">
+            <div class="menu_top">
+                <div><h1 class="title">À la française</h1></div>
                 <div><i class="far fa-heart"></i></div>
             </div>
 
             <form method="post" action="placeholder.php">
                 <fieldset> <!--CARTE ENTREES-->
-                    <legend>ENTRÉES</legend>
+                    <legend class="bottom_border">ENTRÉES</legend>
 
                     <input type="radio" name="entree" value="tartare" id="tartare" />
-                    <label for="tartare">
-                        <span class="food__info">
-                            <span class="food__info__title">Tartare de poulpe acidulé</span>
-                            <span class="food__info__desc">Aux zestes d'orange</span>
+                    <label class="food_container" for="tartare">
+                        <span class="food food_info">
+                            <span class="food food_info_title">Tartare de poulpe acidulé</span>
+                            <span class="food food_info_desc">Aux zestes d'orange</span>
                         </span>
-                        <span class="food__price">25€</span>
+                        <span class="food food_price">25€</span>
+                        <span class="food food_anim"><!--ANIMATION BLOCK-->
+                            <i class="fas fa-check-circle logo_anim"></i>
+                        </span>
                     </label>
 
                     <input type="radio" name="entree" value="veloute" id="veloute" />
@@ -120,28 +121,28 @@
                     </label>
                 </fieldset>
 
-                <div><input type="submit" value="Commander" /></div>
+                <div><input class="btn" type="submit" value="Commander" /></div>
 
             </form>
         </section>
 
         <footer>
             <div class="title title__footer">ohmyfood</div>
-            <div>
-                <div>
+            <div class="footer_link_list">
+                <div class="footer_link">
                     <a href="">
-                        <span><i class="fas fa-utensils"></i></span>
+                        <span class="footer_link_logo"><i class="fas fa-utensils"></i></span>
                         <span>Proposer un restaurant</span>
                     </a>
                 </div>
-                <div>
+                <div class="footer_link">
                     <a href="">
-                        <span><i class="fas fa-hands-helping"></i></span>
+                        <span class="footer_link_logo footer_link_logo--small"><i class="fas fa-hands-helping"></i></span>
                         <span>Devenir partenaire</span>
                     </a>
                 </div>
-                <div><a href="">Mentions légales</a></div>
-                <div><a href="">Contact</a></div>
+                <div class="footer_link"><a href="">Mentions légales</a></div>
+                <div class="footer_link"><a href="">Contact</a></div>
             </div>
         </footer>
 
