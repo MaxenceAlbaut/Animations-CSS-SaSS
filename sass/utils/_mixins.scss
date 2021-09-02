@@ -1,3 +1,17 @@
 @mixin myShadow {
     box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.2);
 }
+
+@mixin myFlexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin res_preview_assign {
+    @each $res_img, $url in $res_imgs {
+        .#{$res_img} {
+            background: $url;
+        }
+    }
+}

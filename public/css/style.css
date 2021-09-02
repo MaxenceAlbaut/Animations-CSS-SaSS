@@ -1,16 +1,288 @@
-label {
-    display: block;
-    display: flex;
-    width: 90%;
-    height: 60px;
-    border: 1px solid black;
-    background-color: red;
+@font-face {
+  font-family: "robotoregular";
+  src: url("../../public/fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "shrikhandregular";
+  src: url("../../public/fonts/Shrikhand-Regular/Shrikhand-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "robotoregular", Arial, Verdana, Helvetica, sans-serif;
+  color: #000;
 }
 
-input[type="radio"] {
-    display: none;
+.title {
+  font-family: "shrikhandregular", Arial, Verdana, Helvetica, sans-serif;
 }
 
-input[type="radio"]:checked + label {
-    background-color:blue;
+a {
+  text-decoration: none;
+  color: unset;
 }
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 220px;
+  color: #FFF;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 30px;
+  box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.2);
+}
+#about .btn {
+  margin: 16px 0 60px 0;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  height: 50px;
+}
+header nav {
+  display: block;
+  display: flex;
+  width: 20%;
+}
+header nav a {
+  display: block;
+  display: flex;
+  width: 100%;
+}
+header nav a i {
+  margin: auto;
+}
+header nav + .title__header {
+  padding-right: 20%;
+}
+
+.title__header {
+  font-size: 1.9em;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.location_container {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  background-color: #eaeaea;
+  box-shadow: inset 0 8px 6px -6px #a3a3a3;
+}
+.location_container .location_icon {
+  width: 10%;
+  display: flex;
+}
+.location_container .location_icon i {
+  color: #353535;
+  margin: auto;
+}
+.location_container .location_text {
+  padding-right: 10%;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+#about h1 {
+  width: 66%;
+  margin: 30px 0 -6px 0;
+}
+#about p {
+  color: #353535;
+}
+
+.directive_list_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.directive_container {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 80%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.2);
+  background-color: #f6f6f6;
+  border-radius: 15px;
+}
+.directive_container p {
+  font-weight: bold;
+  margin-left: 15px;
+}
+.directive_container:hover {
+  background-color: #f2eafb;
+}
+.directive_container:hover .directive_icon {
+  color: #9356DC;
+}
+.directive_number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  margin: 0 15px 0 -15px;
+  color: #FFF;
+  border-radius: 50%;
+  background-color: #9356DC;
+}
+.directive_icon {
+  color: #7e7e7e;
+}
+
+.icon_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+}
+
+.res_img_lpg {
+  background: url("../../public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.res_img_lne {
+  background: url("../../public/img/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.res_img_lds {
+  background: url("../../public/img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.res_img_alf {
+  background: url("../../public/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+#restaurants {
+  width: 100%;
+  background-color: #f6f6f6;
+  padding-top: 30px;
+}
+
+.res_card_container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+.res_card {
+  display: block;
+  height: 254px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.res_card_preview {
+  position: relative;
+  height: 176px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+.res_card_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 78px;
+  border-radius: 0 0 20px 20px;
+}
+.res_card_info_text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4%;
+}
+.res_card_info_text_name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.res_card_info_heart {
+  display: flex;
+  height: 24px;
+  width: 24px;
+  margin-right: 8%;
+}
+.res_card_info_heart i {
+  color: #000;
+  font-size: 1.5em;
+}
+.res_card_info_heart:hover {
+  cursor: pointer;
+  color: #9356DC;
+}
+.res_card_info_heart:active i {
+  color: linear-gradient(#FF79DA, #9356DC);
+}
+.res_card_new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  height: 30px;
+  width: 80px;
+  font-weight: bold;
+  color: #237c66;
+  background-color: #99E2D0;
+  border-radius: 3px;
+}
+
+footer {
+  width: 100%;
+  background-color: #353535;
+  color: #FFF;
+}
+
+.title__footer {
+  font-size: 1.4em;
+  margin-left: 5%;
+  padding-top: 30px;
+  border: 2px solid red;
+}
+
+.footer_link_list {
+  margin-left: 5%;
+  margin: 20px 0 0 5%;
+  padding-bottom: 40px;
+}
+
+.footer_link {
+  margin-bottom: 8px;
+}
+.footer_link_logo {
+  display: block;
+  display: flex;
+  align-items: center;
+  width: 24px;
+  float: left;
+  font-size: 0.9em;
+  padding-top: 3px;
+  margin-right: -3px;
+}
+.footer_link_logo--small {
+  font-size: 0.7em;
+  padding-top: 6px;
+}
+
+/*# sourceMappingURL=style.css.map */
