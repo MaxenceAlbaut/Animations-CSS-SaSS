@@ -1,0 +1,15 @@
+.btn {
+    height: 36px;
+    width: 220px;
+
+    color: white;
+    padding-top: 15px;
+
+    background: linear-gradient(map-get($chart-colors, secondary), map-get($chart-colors, primary));
+    border-radius: 30px;
+    box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.2);
+
+    #about & {
+        margin: 16px 0 60px 0;
+    }
+}
