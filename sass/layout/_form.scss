@@ -1,0 +1,85 @@
+form {
+    margin: 0 3% 0 3%;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+legend {
+    display: block;
+    height: 30px;
+    margin-bottom: 10px;
+    &[class="bottom_border"] {
+        position: relative;
+        &::after {
+            position: absolute;
+            left: 2px;
+            bottom: 2px;
+            display: block;
+            width: 40px;
+            content: '';
+            border-bottom: 2px solid map-get($chart-colors, tertiary);
+        }
+    }
+}
+
+input[type="radio"] {
+    display: none;
+    &:checked + label {
+        background-color:purple;
+    }
+}
+
+.food_container { // label
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 68px;
+    border-radius: 14px;
+    margin-bottom: 10px;
+    @include myShadow;
+    background-color: #FFF;
+}
+
+.food {
+    display: block;
+    &_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2.5%;
+        &_title {
+            font-weight: bold;
+        }
+        &_desc {
+            // TEXT SHRINK WHEN OUT OF SPACE
+        }
+    }
+    &_price {
+        padding-top: 34px;
+        margin-right: 5%;
+    }
+}
+
+.food_anim {
+    //display: none;
+    @include myFlexCenter;
+    height: 68px;
+    width: 60px;
+    border-radius: 0 14px 14px 0;
+    background-color: map-get($chart-colors, tertiary);
+    .logo_anim {
+        font-size: 1.25em;
+        color: #FFF;
+    }
+}
+
+
+
+
+
+
