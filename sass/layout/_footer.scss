@@ -1,0 +1,40 @@
+footer
+{
+    width: 100%;
+    background-color: $darkgrey;
+    color: #FFF;
+}
+
+.title
+{
+    &__footer {
+        font-size: 1.4em;
+        margin-left: 5%;
+        padding-top: 30px;
+        border: 2px solid red;
+    }
+}
+
+.footer_link_list {
+    margin-left: 5%;
+    margin: 20px 0 0 5%;
+    padding-bottom: 40px;
+}
+
+.footer_link {
+    margin-bottom: 8px;
+    &_logo {
+        display: block;
+        display: flex;
+        align-items: center;
+        width: 24px;
+        float: left;
+        font-size: 0.9em;
+        padding-top: 3px;
+        margin-right: -3px;
+        &--small {
+            font-size: 0.7em;
+            padding-top: 6px;
+        }
+    }
+}
