@@ -1,0 +1,54 @@
+
+.directive_list_container {
+    @include myFlexCenter;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.directive {
+    &_container {
+        display: flex;
+        align-items: center;
+        height: 70px;
+        width: 80%;
+        margin-bottom: 20px;
+        @include myShadow;
+        background-color: $lightgrey;
+        border-radius: 15px;
+        p {
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        &:hover {
+            background-color: lighten(map-get($chart-colors, primary), 35%);
+            .directive_icon {
+                color: map-get($chart-colors, primary);
+            }
+        }
+    }
+    &_number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 24px;
+        width: 24px;
+        margin: 0 15px 0 -15px;
+        color: #FFF;
+        border-radius: 50%;
+        background-color: map-get($chart-colors, primary);
+    }
+    &_icon {
+        color: $logogrey;
+    }
+}
+
+.icon_container {
+    @include myFlexCenter;
+    height: 20px;
+    width: 20px;
+}
+
+.double_icon_container {
+    // MUST FIX
+}
