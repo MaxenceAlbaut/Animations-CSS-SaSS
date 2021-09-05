@@ -29,7 +29,15 @@ legend {
 input[type="radio"] {
     display: none;
     &:checked + label {
-        background-color:purple;
+        .food_info_container {
+            width: 83% ;
+        }
+        .food_anim {
+            transform: translateX(-100%);
+        }
+        .logo_anim {
+            transform: rotate(0deg);
+        }
     }
 }
 
@@ -45,6 +53,7 @@ input[type="radio"] {
     background-color: #FFF;
     position: relative; // To position animation block outside
     overflow: hidden; // Hides animation block
+    /*
     &:hover { // REPLACE BY :checked somehow...
         .food_info_container {
             width: 83% ;
@@ -56,6 +65,7 @@ input[type="radio"] {
             transform: rotate(0deg);
         }
     }
+    */
 }
 
 .food {
