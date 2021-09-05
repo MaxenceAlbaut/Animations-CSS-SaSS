@@ -46,28 +46,7 @@
             }
         }
         &_heart {
-            display: flex;
-            height: 24px;
-            width: 24px;
             margin-right: 8%;
-            i {
-                color: #000;
-                font-size: 1.5em;
-            }
-            &:hover { // DOES NOT WORK (must place button above <a res_card>)
-                cursor: pointer;
-                color: map-get($chart-colors, primary);
-                // 
-            }
-            &:active {
-                i {
-                    color: $purplegradient; // DOES NOT WORK
-                }
-
-                // 2 buttons ; if active : if display:none
-                //                            {display: flex}
-                //                          else {display: none}
-            }
         }
     }
     &_new {
