@@ -43,6 +43,19 @@ input[type="radio"] {
     margin-bottom: 10px;
     @include myShadow;
     background-color: #FFF;
+    position: relative; // To position animation block outside
+    overflow: hidden; // Hides animation block
+    &:hover { // REPLACE BY :checked somehow...
+        .food_info_container {
+            width: 83% ;
+        }
+        .food_anim {
+            transform: translateX(-100%);
+        }
+        .logo_anim {
+            transform: rotate(0deg);
+        }
+    }
 }
 
 .food {
@@ -51,30 +64,53 @@ input[type="radio"] {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 2.5%;
+        margin-left: 8px;
+        margin-right: 5%;
+        width: 80%;
         &_title {
             font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         &_desc {
-            // TEXT SHRINK WHEN OUT OF SPACE
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
     &_price {
+        font-weight: bold;
+        width: 10%;
         padding-top: 34px;
-        margin-right: 5%;
     }
 }
 
+.food_info_container { // Used to resize during transition
+    display: block;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    transition: width 350ms ease-in-out;
+}
+
+
 .food_anim {
-    //display: none;
     @include myFlexCenter;
+    position: absolute;
+    right: -17%;
+    top: 0;
     height: 68px;
-    width: 60px;
+    width: 17%;
     border-radius: 0 14px 14px 0;
     background-color: map-get($chart-colors, tertiary);
+    transition: 300ms ease-in-out 50ms;
     .logo_anim {
+        display: inline-block;
         font-size: 1.25em;
         color: #FFF;
+        transform: rotate(-180deg);
+        transition: 175ms ease-in-out 175ms;
     }
 }
 
