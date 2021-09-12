@@ -13,10 +13,18 @@ header {
                 margin: auto;
             }
         }
+        & + .title__header {
+            padding-right: 14%;
+        }
     }
-
-    nav + .title__header {
-        padding-right: 20%;
+    @media only screen and (min-width: 481px) {
+        height: 75px;
+        i{
+            font-size: 1.25em;
+        }
+        .title{
+            font-size: 2.4em;
+        }
     }
 }
 

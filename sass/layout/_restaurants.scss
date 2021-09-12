@@ -4,6 +4,14 @@
     width: 100%;
     background-color: $lightgrey;
     padding-top: 30px;
+    h2 {
+        margin-left: 5%;
+        @media only screen and (min-width: 1080px) {
+            padding-bottom: 20px;
+            @include myFlexCenter;
+            margin-left: 0;
+        }
+    }
 }
 
 .res_card_container {
@@ -11,6 +19,11 @@
     flex-direction: column;
     width: 90%;
     margin: auto;
+    @media only screen and (min-width: 1080px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
 
 .res_card {
@@ -19,7 +32,6 @@
     margin-bottom: 30px;
     border-radius: 20px;
     @include myShadow;
-    
     &_preview {
         position: relative;
         height: 176px;
@@ -60,6 +72,13 @@
         color: darken(map-get($chart-colors, tertiary), 43%);
         background-color: map-get($chart-colors, tertiary);
         border-radius: 3px;
+    }
+    &:hover{
+        transform: scale(1.0125);
+        transition-duration: 0.15s;
+    }
+    @media only screen and (min-width: 1080px) {
+        width: 40%;
     }
 }
 

@@ -7,12 +7,27 @@ form {
         margin-top: 50px;
         padding-bottom: 80px;
     }
+    @media only screen and (min-width: 1080px){
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 }
 
 fieldset {
     margin: 0 0 30px 0;
     padding: 0;
     border: none;
+    width: 100%;
+    @media only screen and (min-width: 600px){
+        width: 70%;
+        margin: 0 auto 30px auto;
+    }
+    @media only screen and (min-width: 1080px){
+        width: 30%;
+        margin: 0 0 30px 0;
+    }
+    
 }
 
 legend {
@@ -35,12 +50,15 @@ legend {
 
 input[type="radio"] {
     display: none;
+    & + label:hover {
+        cursor: pointer;
+    }
     &:checked + label {
         .food_info_container {
             width: 83% ;
         }
         .food_anim {
-            transform: translateX(-100%);
+            transform: translateX(-99%);
         }
         .logo_anim {
             transform: rotate(0deg);
