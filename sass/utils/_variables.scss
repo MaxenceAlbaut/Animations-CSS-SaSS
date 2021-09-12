@@ -5,6 +5,8 @@ $chart-colors: (
 );
 
 $purplegradient: linear-gradient(map-get($chart-colors, secondary), map-get($chart-colors, primary));
+$lightpurplegradient : linear-gradient(lighten(#FF79DA, 3%), lighten(#9356DC, 3%));
+
 
 
 $grey: #eaeaea;
