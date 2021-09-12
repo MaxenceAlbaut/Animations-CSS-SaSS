@@ -40,6 +40,8 @@ a {
 }
 .btn:hover {
   cursor: pointer;
+  box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(#ff88de, #9b63df);
 }
 
 .fav_btn {
@@ -47,7 +49,6 @@ a {
   height: 21px;
   width: 23px;
   font-size: 1.5em;
-  border: 1px solid red;
 }
 .fav_btn_filled {
   position: absolute;
@@ -55,8 +56,10 @@ a {
   left: -1px;
   opacity: 0;
   transition: opacity 250ms;
-  color: red;
   background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .fav_btn_empty {
   position: absolute;
@@ -142,6 +145,10 @@ header nav + .title__header {
 }
 #about p {
   color: #353535;
+}
+
+#fonctionnement h2 {
+  margin-left: 7%;
 }
 
 .directive_list_container {
@@ -353,19 +360,6 @@ input[type=radio]:checked + label .logo_anim {
   background-color: #FFF;
   position: relative;
   overflow: hidden;
-  /*
-  &:hover { // REPLACE BY :checked somehow...
-      .food_info_container {
-          width: 83% ;
-      }
-      .food_anim {
-          transform: translateX(-100%);
-      }
-      .logo_anim {
-          transform: rotate(0deg);
-      }
-  }
-  */
 }
 
 .food {
@@ -376,8 +370,8 @@ input[type=radio]:checked + label .logo_anim {
   flex-direction: column;
   justify-content: center;
   margin-left: 8px;
-  margin-right: 5%;
-  width: 80%;
+  margin-right: 3%;
+  width: 82%;
 }
 .food_info_title {
   font-weight: bold;
@@ -459,6 +453,33 @@ footer {
 .footer_link_logo--small {
   font-size: 0.7em;
   padding-top: 6px;
+}
+
+.food_container:nth-child(3) {
+  opacity: 0;
+  animation: menu_anim 300ms 60ms forwards;
+}
+
+.food_container:nth-child(5) {
+  opacity: 0;
+  animation: menu_anim 300ms 100ms forwards;
+}
+
+.food_container:nth-child(7) {
+  opacity: 0;
+  animation: menu_anim 300ms 140ms forwards;
+}
+
+@keyframes menu_anim {
+  0% {
+    transform: translateY(12px);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
