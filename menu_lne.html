@@ -12,24 +12,196 @@
     <body>
 
         <header>
-            <div class="header-Title">ohmyfood</div>
+            <nav><a href="./accueil.html"><i class="fas fa-arrow-left"></i></a></nav>
+            <div class="title title__header">ohmyfood</div>
         </header>
 
+        <div class="menu_preview res_img_alf"></div> <!--MENU PREVIEW-->
 
+        <section id="menu_display">
+            <div class="menu_top">
+                <div><h1 class="title">La note enchantée</h1></div>
+                <div class="fav_btn">
+                    <i class="fas fa-heart fav_btn_filled"></i>
+                    <i class="far fa-heart fav_btn_empty"></i>
+                </div>
+            </div>
+
+            <form method="post" action="placeholder.php">
+                <fieldset> <!--CARTE ENTREES-->
+                    <legend class="bottom_border">ENTRÉES</legend>
+
+                    <input type="radio" name="entree" value="e1" id="e1" />
+                    <label class="food_container" for="e1">
+                        <span class="food food_info_container">
+                            <span class="food food_info">
+                                <span class="food food_info_title">Ravioles de foie gras</span>
+                                <span class="food food_info_desc">Accompagnés de leur crème à la truffe</span>
+                            </span>
+                            <span class="food food_price">25€</span>
+                        </span>
+                        <span class="food food_anim"> <!--ANIMATION BLOCK-->
+                            <i class="fas fa-check-circle logo_anim"></i>
+                        </span>
+                    </label>
+                    
+                    <input type="radio" name="entree" value="e2" id="e2" />
+                    <label class="food_container" for="e2">
+                        <span class="food food_info_container">
+                            <span class="food food_info">
+                                <span class="food food_info_title">Caviar osciètre</span>
+                                <span class="food food_info_desc">Sur blini à la farine de blé noir</span>
+                            </span>
+                            <span class="food food_price">35€</span>
+                        </span>
+                        <span class="food food_anim"> <!--ANIMATION BLOCK-->
+                            <i class="fas fa-check-circle logo_anim"></i>
+                        </span>
+                    </label>
+
+                    <input type="radio" name="entree" value="e3" id="e3" />
+                    <label class="food_container" for="e3">
+                        <span class="food food_info_container">
+                            <span class="food food_info">
+                                <span class="food food_info_title">Homard et espuma de potiron</span>
+                                <span class="food food_info_desc">Mariné aux zestes d'orange</span>
+                            </span>
+                            <span class="food food_price">20€</span>
+                        </span>
+                        <span class="food food_anim"> <!--ANIMATION BLOCK-->
+                            <i class="fas fa-check-circle logo_anim"></i>
+                        </span>
+                    </label>
+
+                    <input type="radio" name="entree" value="e4" id="e4" />
+                    <label class="food_container" for="e4">
+                        <span class="food food_info_container">
+                            <span class="food food_info">
+                                <span class="food food_info_title">Foie gras de canard cuit entier</span>
+                                <span class="food food_info_desc">Confiture de figue et pain toasté</span>
+                            </span>
+                            <span class="food food_price">35€</span>
+                        </span>
+                        <span class="food food_anim"> <!--ANIMATION BLOCK-->
+                            <i class="fas fa-check-circle logo_anim"></i>
+                        </span>
+                    </label>
+                </fieldset>
+            
+                <fieldset> <!--CARTE PLATS-->
+                    <legend class="bottom_border">PLATS</legend>
+                    
+                    <input type="radio" name="plat" value="p1" id="p1" />
+                    <label class="food_container" for="p1">
+                        <span class="food food_info_container">
+                            <span class="food food_info">
+                                <span class="food food_info_title">Noix de coquilles Saint-Jacques</span>
+                                <span class="food food_info_desc">Sur lit de purée de céleri-rave</span>
+                            </span>
+                            <span class="food food_price">40€</span>
+                        </span>
+                        <span class="food food_anim"> <!--ANIMATION BLOCK-->
+                            <i class="fas fa-check-circle logo_anim"></i>
+                        </span>
+                    </label>
+
+                    <input type="radio" name="plat" value="p2" id="p2" />
+                    <label class="food_container" for="p2">
+                        <span class="food food_info_container">
+                            <span class="food food_info">
+                                <span class="food food_info_title">Langoustine poêlée</span>
+                                <span class="food food_info_desc">Purée de patate douce</span>
+                            </span>
+                            <span class="food food_price">35€</span>
+                        </span>
+                        <span class="food food_anim"> <!--ANIMATION BLOCK-->
+                            <i class="fas fa-check-circle logo_anim"></i>
+                        </span>
+                    </label>
+
+                    <input type="radio" name="plat" value="p3" id="p3" />
+                    <label class="food_container" for="p3">
+                        <span class="food food_info_container">
+                            <span class="food food_info">
+                                <span class="food food_info_title">Mijoté de queue de boeuf</span>
+                                <span class="food food_info_desc">Et riz sauvage aux zestes de citron</span>
+                            </span>
+                            <span class="food food_price">44€</span>
+                        </span>
+                        <span class="food food_anim"> <!--ANIMATION BLOCK-->
+                            <i class="fas fa-check-circle logo_anim"></i>
+                        </span>
+                    </label>
+                </fieldset>
+
+                <fieldset> <!--CARTE DESSERTS-->
+                    <legend class="bottom_border">DESSERTS</legend>
+                    
+                    <input type="radio" name="dessert" value="d1" id="d1" />
+                    <label class="food_container" for="d1">
+                        <span class="food food_info_container">
+                            <span class="food food_info">
+                                <span class="food food_info_title">Macaron noisette et chocolat</span>
+                                <span class="food food_info_desc">Glace au caramel brun et sel de Guérande</span>
+                            </span>
+                            <span class="food food_price">18€</span>
+                        </span>
+                        <span class="food food_anim"> <!--ANIMATION BLOCK-->
+                            <i class="fas fa-check-circle logo_anim"></i>
+                        </span>
+                    </label>
+
+                    <input type="radio" name="dessert" value="d2" id="d2" />
+                    <label class="food_container" for="d2">
+                        <span class="food food_info_container">
+                            <span class="food food_info">
+                                <span class="food food_info_title">Baba au rhum revisité</span>
+                                <span class="food food_info_desc">Avec son coulis de citron</span>
+                            </span>
+                            <span class="food food_price">22€</span>
+                        </span>
+                        <span class="food food_anim"> <!--ANIMATION BLOCK-->
+                            <i class="fas fa-check-circle logo_anim"></i>
+                        </span>
+                    </label>
+
+                    <input type="radio" name="dessert" value="d3" id="d3" />
+                    <label class="food_container" for="d3">
+                        <span class="food food_info_container">
+                            <span class="food food_info">
+                                <span class="food food_info_title">Tarte au citron meringuée</span>
+                                <span class="food food_info_desc">Déstructurée</span>
+                            </span>
+                            <span class="food food_price">23€</span>
+                        </span>
+                        <span class="food food_anim"> <!--ANIMATION BLOCK-->
+                            <i class="fas fa-check-circle logo_anim"></i>
+                        </span>
+                    </label>
+                </fieldset>
+
+                <div class="order_button"><input class="btn" type="submit" value="Commander" /></div>
+
+            </form>
+        </section>
 
         <footer>
-            <div class="footer-Title">ohmyfood</div>
-            <div>
-                <div>
-                    <div><i class="fas fa-utensils"></i></div>
-                    <div><a href="">Proposer un restaurant</a></div>
+            <div class="title title__footer">ohmyfood</div>
+            <div class="footer_link_list">
+                <div class="footer_link">
+                    <a href="">
+                        <span class="footer_link_logo"><i class="fas fa-utensils"></i></span>
+                        <span>Proposer un restaurant</span>
+                    </a>
                 </div>
-                <div>
-                    <div><i class="fas fa-hands-helping"></i></div>
-                    <div><a href="">Devenir partenaire</a></div>
+                <div class="footer_link">
+                    <a href="">
+                        <span class="footer_link_logo footer_link_logo--small"><i class="fas fa-hands-helping"></i></span>
+                        <span>Devenir partenaire</span>
+                    </a>
                 </div>
-                <div><a href="">Mentions légales</a></div>
-                <div><a href="">Contact</a></div>
+                <div class="footer_link"><a href="">Mentions légales</a></div>
+                <div class="footer_link"><a href="mailto:contact@ohmyfood.com">Contact</a></div>
             </div>
         </footer>
 
