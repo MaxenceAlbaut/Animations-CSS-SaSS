@@ -1,0 +1,20 @@
+@for $i from 3 through 7 {
+    @if ($i+1) % 2 == 0 {
+        .food_container:nth-child(#{$i}) {
+            opacity: 0;
+            animation: menu_anim 300ms 20ms*$i forwards;
+        }
+    }
+}
+
+@keyframes menu_anim {
+    0%{
+        transform: translateY(12px);
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
