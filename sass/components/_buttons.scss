@@ -28,7 +28,6 @@
         opacity: 0;
         transition: opacity 250ms;
         background: $purplegradient;
-        background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
     }
@@ -53,6 +52,6 @@
 
 input[type="submit"] {
     border: none;
-    font-size: 1em;
-    font-style: none;
+    font-size: 1.1rem;
+    letter-spacing: .02rem;
 }
