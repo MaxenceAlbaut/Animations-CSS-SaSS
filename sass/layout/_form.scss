@@ -60,19 +60,6 @@ input[type="radio"] {
     background-color: #FFF;
     position: relative; // To position animation block outside
     overflow: hidden; // Hides animation block
-    /*
-    &:hover { // REPLACE BY :checked somehow...
-        .food_info_container {
-            width: 83% ;
-        }
-        .food_anim {
-            transform: translateX(-100%);
-        }
-        .logo_anim {
-            transform: rotate(0deg);
-        }
-    }
-    */
 }
 
 .food {
@@ -82,8 +69,8 @@ input[type="radio"] {
         flex-direction: column;
         justify-content: center;
         margin-left: 8px;
-        margin-right: 5%;
-        width: 80%;
+        margin-right: 3%;
+        width: 82%;
         &_title {
             font-weight: bold;
             white-space: nowrap;
