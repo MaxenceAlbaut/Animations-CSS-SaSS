@@ -7,8 +7,6 @@ $chart-colors: (
 $purplegradient: linear-gradient(map-get($chart-colors, secondary), map-get($chart-colors, primary));
 $lightpurplegradient : linear-gradient(lighten(#FF79DA, 3%), lighten(#9356DC, 3%));
 
-
-
 $grey: #eaeaea;
 $lightgrey: #f6f6f6;
 $darkgrey: #353535;
@@ -20,3 +18,5 @@ $res_imgs: (
     res_img_lds: url("../../public/img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"),
     res_img_alf: url("../../public/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg")
 );
+
+$spintiming: cubic-bezier(.31,.68,.89,0);
